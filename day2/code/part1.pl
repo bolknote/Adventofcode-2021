@@ -8,4 +8,4 @@ sub down {$y+=shift}
 open F, $ARGV[1];
 eval join ';', <F>;
 
-print $x * $y;
+print $x * $y, "\n";
