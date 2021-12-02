@@ -1,3 +1,5 @@
+#!/usr/bin/env perl
+
 use strict;
 my ($x, $y, $aim);
 
