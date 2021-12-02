@@ -2,7 +2,7 @@
 
 ## Languages
 
-| Day  | Part | Languag            | Link                 |
+| Day  | Part | Language           | Link                 |
 | ---- | ---- | ------------------ | -------------------- |
 |  01  |   1  | GNU dc             | [`./day01/`](/day01) |
 |  01  |   2  | PHP                | [`./day01/`](/day01) |
