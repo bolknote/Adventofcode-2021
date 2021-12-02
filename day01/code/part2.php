@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 $r = file($_SERVER['argv'][1], FILE_IGNORE_NEW_LINES);
 

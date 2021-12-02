@@ -1,0 +1,30 @@
+#!/usr/bin/env dc
+
+# Print v2, v1, pop both then print newline
+[ rnP [
+]P ] sp
+
+# Print "num (decreased)"
+[ lv [ (decreased)] lpx ] sd
+
+# Print "num (increased)"
+[ lv [ (increased)] lpx ] si
+
+# Quit
+[ q ] sq
+
+# Initial string
+?d [ (N/A - no previous measurement)] lpx
+
+# Main cycle
+[
+	d?
+	# Exit if empty
+	z 3>q
+	# Compare two values
+	dsv <d lv >i lv
+	# Run itself
+	lmx
+] sm
+
+lmx
