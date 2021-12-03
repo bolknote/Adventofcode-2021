@@ -14,12 +14,12 @@ function Get-MaxBits {
 }
 
 $Lines = Get-Content $args[0]
-$Cnt = $Lines[0].Length
+$Last = $Lines[0].Length - 1
 
 $LinesOx = @() + $Lines
 $LinesCo = @() + $Lines
 
-foreach ($i in 0..( $Cnt-1 )) {
+foreach ($i in 0..$Last) {
     if ($LinesOx.Length -gt 1) {
         $MaxOx = Get-MaxBits($LinesOx)
         [array] $LinesOx = $LinesOx | ?{ $_[$i] -eq $MaxOx[$i] }
