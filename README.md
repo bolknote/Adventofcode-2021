@@ -9,3 +9,4 @@
 |  02  |   1  | Regina Rexx        | [`./day02/`](/day02) |
 |  02  |   2  | Perl               | [`./day02/`](/day02) |
 |  03  |   1  | Tcl                | [`./day03/`](/day03) |
+|  03  |   2  | PowerShell         | [`./day03/`](/day03) |
