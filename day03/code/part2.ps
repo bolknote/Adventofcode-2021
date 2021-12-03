@@ -10,7 +10,7 @@ function Get-MaxBits {
         % { $i = 0 } { $Freq[$i++] += (-1, 1)[$_] }
     }
 
-    $Freq | %{ [string] [int] ($_ -ge 0) }
+    $Freq | %{ "01"[$_ -ge 0] }
 }
 
 $Lines = Get-Content $args[0]
