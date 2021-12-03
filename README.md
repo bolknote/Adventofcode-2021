@@ -8,3 +8,4 @@
 |  01  |   2  | PHP                | [`./day01/`](/day01) |
 |  02  |   1  | Regina Rexx        | [`./day02/`](/day02) |
 |  02  |   2  | Perl               | [`./day02/`](/day02) |
+|  03  |   1  | Tcl                | [`./day03/`](/day03) |
