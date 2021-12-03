@@ -1,13 +1,13 @@
 #!/usr/bin/env pwsh
 
 function Get-MaxBits {
-	param ([string[]]$Lines)
+    param ([string[]]$Lines)
 
-	$Freq = ,0 * $Lines[0].Length
+    $Freq = ,0 * $Lines[0].Length
 
     $Lines | % {
-    	$_ -Split "\B" |
-    	% { $i = 0 } { $Freq[$i++] += (-1, 1)[$_] }
+        $_ -Split "\B" |
+        % { $i = 0 } { $Freq[$i++] += (-1, 1)[$_] }
     }
 
     $Freq | %{ [string] [int] ($_ -ge 0) }
@@ -20,15 +20,15 @@ $LinesOx = @() + $Lines
 $LinesCo = @() + $Lines
 
 foreach ($i in 0..( $Cnt-1 )) {
-	if ($LinesOx.Length -gt 1) {
-		$MaxOx = Get-MaxBits($LinesOx)
-		[array] $LinesOx = $LinesOx | ?{ $_[$i] -eq $MaxOx[$i] }
-	}
+    if ($LinesOx.Length -gt 1) {
+        $MaxOx = Get-MaxBits($LinesOx)
+        [array] $LinesOx = $LinesOx | ?{ $_[$i] -eq $MaxOx[$i] }
+    }
 
-	if ($LinesCo.Length -gt 1) {
-		$MaxCo = Get-MaxBits($LinesCo)
-		[array] $LinesCo = $LinesCo | ?{ $_[$i] -ne $MaxCo[$i] }
-	}
+    if ($LinesCo.Length -gt 1) {
+        $MaxCo = Get-MaxBits($LinesCo)
+        [array] $LinesCo = $LinesCo | ?{ $_[$i] -ne $MaxCo[$i] }
+    }
 }
 
 [Convert]::ToInt32($LinesOx, 2) * [Convert]::ToInt32($LinesCo, 2)
