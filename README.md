@@ -10,3 +10,4 @@
 |  02  |   2  | Perl               | [`./day02/`](/day02) |
 |  03  |   1  | Tcl                | [`./day03/`](/day03) |
 |  03  |   2  | PowerShell         | [`./day03/`](/day03) |
+|  04  |   1  | Crystal            | [`./day03/`](/day04) |
