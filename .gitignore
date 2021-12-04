@@ -1,1 +1,3 @@
 plans.md
+*.php
+!day01/*.php
