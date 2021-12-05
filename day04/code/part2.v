@@ -98,6 +98,4 @@ fn main() {
             }
         }
     }
-
-    println(boards)
 }
