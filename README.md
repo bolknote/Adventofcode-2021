@@ -11,3 +11,4 @@
 |  03  |   1  | Tcl                | [`./day03/`](/day03) |
 |  03  |   2  | PowerShell         | [`./day03/`](/day03) |
 |  04  |   1  | Crystal            | [`./day04/`](/day04) |
+|  04  |   2  | V                  | [`./day04/`](/day04) |
