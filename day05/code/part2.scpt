@@ -27,7 +27,7 @@ on step(c1, c2)
 end
 
 on run argv
-	set DEBUG to true
+	set DEBUG to false
 
     set fname to (item 1 of argv) as string
     set lns to paragraphs of (read POSIX file fname)
