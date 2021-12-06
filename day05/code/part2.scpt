@@ -43,19 +43,17 @@ on run argv
     		exit repeat
     	end try
 
-        set x1 to min(1, 2)
+        set x1 to min(item 1 of cs as number, item 3 of mid as number)
+        set x2 to max(item 1 of cs as number, item 3 of mid as number)
 
-        set x1 to min(item 1 of cs, item 3 of mid)
-        set x2 to max(item 1 of cs, item 3 of mid)
-
-        set y1 to min(item 1 of mid, item 3 of cs)
-        set y2 to max(item 1 of mid, item 3 of cs)
+        set y1 to min(item 1 of mid as number, item 3 of cs as number)
+        set y2 to max(item 1 of mid as number, item 3 of cs as number)
 
         set end of coords to {x1 + 1, y1 + 1, x2 + 1, y2 + 1}
         set dim to max(dim, max(x2, y2)) as number
     end repeat
 
-    set dim to dim + 1
+    set dim to dim + 2
 
     repeat dim times
 	    set row to {}
@@ -66,7 +64,7 @@ on run argv
     	set end of field to row
     end
 
-    if DEBUG then log "Created"
+    if DEBUG then log "Created " & dim & "×" & dim
 
     set sum to 0
 
