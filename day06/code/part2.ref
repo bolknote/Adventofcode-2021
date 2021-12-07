@@ -1,0 +1,55 @@
+RemoveComma {
+    e.First ',' e.Rest = e.First <RemoveComma e.Rest>;
+    e.1 = e.1;
+}
+
+GroupN {
+    (e.N) (e.Left e.N e.Right) (e.Cnt) = <GroupN (e.N) (e.Left e.Right) (<+ e.Cnt 1>)>;
+    (e.N) (e.All) (e.Cnt) = e.Cnt;
+    e.1 = '0'
+}
+
+GroupNRun {
+    (e.N) ((e.All) (e.Result)) = (e.All) (e.Result <GroupN (<Symb e.N>) (e.All) (0)>)
+}
+
+NewFish {
+    (e.v9) t.v1 t.v2 t.v3 t.v4 t.v5 t.v6 (e.v7) t.v8
+    = t.v1 t.v2 t.v3 t.v4 t.v5 t.v6 (<+ (e.v7) e.v9>) t.v8 (e.v9);
+}
+
+NewFishRun {
+    t.1 (e.All) = <NewFish e.All>
+}
+
+Sum {
+    (e.1) (e.2) e.Rest = <Sum (<Add (e.1) e.2>) e.Rest>;
+    (e.1) = e.1
+}
+
+Cycle {
+    e.End t.Closure t.Dir t.EndCallback (e.End) (e.Rest) = <t.EndCallback e.Rest>;
+    e.1 t.Closure t.Dir t.EndCallback t.End (e.Rest), <t.Dir e.1 1>: e.2
+    = <Cycle e.2 t.Closure t.Dir t.EndCallback t.End (<t.Closure (e.1) (e.Rest)>)>;
+}
+
+AddBrackets {
+    s.N e.Rest = (s.N) <AddBrackets e.Rest>;
+    e.1 = e.1
+}
+
+GetResult {
+    t.N (e.Rest), <AddBrackets e.Rest>: e.Result = e.Result
+}
+
+Group {
+    e.N = <Cycle 0 &GroupNRun &Add &GetResult (9) ((e.N) (''))>
+}
+
+Main {
+    e.v = <Cycle 256 &NewFishRun &Sub &Sum (0) (<Group <RemoveComma e.v>>)>
+}
+
+$ENTRY Go {
+  = <Prout <Symb <Main <Card>>>>
+}
