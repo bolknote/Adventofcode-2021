@@ -8,7 +8,6 @@ BEGIN {
 
 {
     v[NR] = $1
-    sum += $1
 }
 
 END {
