@@ -16,3 +16,4 @@
 |  05  |   2  | AppleScript        | [`./day05/`](/day05) |
 |  06  |   1  | FOCAL-81           | [`./day06/`](/day06) |
 |  06  |   2  | REFAL-5λ           | [`./day06/`](/day06) |
+|  07  |   1  | AWK                | [`./day07/`](/day07) |
