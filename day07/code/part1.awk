@@ -14,8 +14,6 @@ BEGIN {
 END {
     asort(v)
     median = v[rshift(NR, 1)]
-
-    fuel = 0
     for (i in v) fuel += abs(median - v[i])
 
     print fuel
