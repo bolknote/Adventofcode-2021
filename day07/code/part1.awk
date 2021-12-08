@@ -16,7 +16,7 @@ END {
     median = v[rshift(NR, 1)]
 
     fuel = 0
-    for (i = 1; i <= NR; i++) fuel += abs(median - v[i])
+    for (i in v) fuel += abs(median - v[i])
 
     print fuel
 }
