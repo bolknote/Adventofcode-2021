@@ -19,3 +19,4 @@
 |  07  |   1  | GNU Awk            | [`./day07/`](/day07) |
 |  07  |   2  | Vala               | [`./day07/`](/day07) |
 |  08  |   1  | PCRE               | [`./day08/`](/day08) |
+|  08  |   2  | FreePascal         | [`./day08/`](/day08) |
