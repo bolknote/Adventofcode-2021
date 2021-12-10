@@ -20,3 +20,4 @@
 |  07  |   2  | Vala               | [`./day07/`](/day07) |
 |  08  |   1  | PCRE               | [`./day08/`](/day08) |
 |  08  |   2  | FreePascal         | [`./day08/`](/day08) |
+|  09  |   1  | Commodore BASIC V2 | [`./day09/`](/day09) |
