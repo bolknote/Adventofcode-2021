@@ -1,4 +1,4 @@
-#!/Users/bolk/Downloads/cbmbasic/cbmbasic
+#!/usr/bin/env cbmbasic
 
 05 REM WE DOESN'T HAVE ENOUGH MEMORY :(
 10 DIM F(3, 100): Y = 0: SUM = 0
