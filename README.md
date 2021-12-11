@@ -1,4 +1,6 @@
-# Advent of Code 2021
+# Advent of Code 2021: 17/50
+
+I want to try to solve each problem in a different language.
 
 ## Languages
 
