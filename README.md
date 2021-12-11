@@ -1,4 +1,4 @@
-# Advent of Code 2021: 17/50
+# Advent of Code 2021: 18/50
 
 I want to try to solve each Advent of Code's task in a different language.
 
@@ -23,3 +23,4 @@ I want to try to solve each Advent of Code's task in a different language.
 |  08  |   1  | PCRE               | [`./day08/`](/day08) |
 |  08  |   2  | FreePascal         | [`./day08/`](/day08) |
 |  09  |   1  | Commodore BASIC    | [`./day09/`](/day09) |
+|  09  |   2  | Dart               | [`./day09/`](/day09) |
