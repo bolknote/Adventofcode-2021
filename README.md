@@ -1,4 +1,4 @@
-# Advent of Code 2021: 19/50
+# Advent of Code 2021: 20/50
 
 I want to try to solve each [Advent of Code](https://adventofcode.com/2021)'s task in a different language.
 
@@ -25,3 +25,4 @@ I want to try to solve each [Advent of Code](https://adventofcode.com/2021)'s ta
 |  09  |   1  | Commodore BASIC    | [`./day09/`](/day09) |
 |  09  |   2  | Dart               | [`./day09/`](/day09) |
 |  10  |   1  | VimScript          | [`./day10/`](/day10) |
+|  10  |   2  | Cmake              | [`./day10/`](/day10) |
