@@ -1,6 +1,6 @@
 # Advent of Code 2021: 18/50
 
-I want to try to solve each Advent of Code's task in a different language.
+I want to try to solve each [Advent of Code](https://adventofcode.com/2021)'s task in a different language.
 
 ## Languages
 
