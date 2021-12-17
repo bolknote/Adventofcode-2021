@@ -27,4 +27,4 @@ I want to try to solve each [Advent of Code](https://adventofcode.com/2021)'s ta
 |  10  |   1  | VimScript          | [`./day10/`](/day10) |
 |  10  |   2  | Cmake              | [`./day10/`](/day10) |
 
-Friends, I was seriously ill with the flu, so I had to abandon the project.
+Friends, I am seriously ill with the flu, so the project had to be abandoned.
