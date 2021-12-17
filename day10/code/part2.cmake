@@ -1,6 +1,3 @@
-
-# break()
-
 file(READ ${name} lines)
 
 # To avoid [] special meaning in cmake
