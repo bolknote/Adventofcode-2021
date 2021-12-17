@@ -26,3 +26,5 @@ I want to try to solve each [Advent of Code](https://adventofcode.com/2021)'s ta
 |  09  |   2  | Dart               | [`./day09/`](/day09) |
 |  10  |   1  | VimScript          | [`./day10/`](/day10) |
 |  10  |   2  | Cmake              | [`./day10/`](/day10) |
+
+Friends, I was seriously ill with the flu, so I had to abandon the project.
